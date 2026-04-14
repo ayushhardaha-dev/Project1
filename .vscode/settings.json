@@ -1,0 +1,8 @@
+{
+  "dotnet.defaultSolution": "src/Backend/KnowledgeAgent.sln",
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  "omnisharp.enableEditorConfigSupport": true
+}
