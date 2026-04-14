@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dotnet: restore backend",
+      "type": "shell",
+      "command": "dotnet restore src/Backend/KnowledgeAgent.sln",
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "dotnet: build backend",
+      "type": "shell",
+      "command": "dotnet build src/Backend/KnowledgeAgent.sln",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "dotnet: restore backend",
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
